@@ -40,10 +40,12 @@ def createTemplate(raptemplate):
             returntemplate += "".join(["<prosody rate='x-slow'>", placeholderword, "</prosody>"])
         elif c = "k":
             returntemplate += "".join(["<amazon:effect name='whispered'>", placeholderword, "</amazon:effect>"])
+        elif c = "l":
+            returntemplate += "".join(["<break time='1s'/>"])    
     return "<speak>" + returntemplate + "</speak>"
             
 def rap(word):
-    template = createTemplate("ababcdcdefefggghhhijjik").replace(placeholderword, word) + returnrandominterjection()
+    template = createTemplate("ababcdcdefefglglglhhhijjik").replace(placeholderword, word) + returnrandominterjection()
     return statement(template)
 
 if __name__ == '__main__':
