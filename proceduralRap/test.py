@@ -32,7 +32,7 @@ def createTemplate(raptemplate):
             returntemplate += "".join(["<prosody rate='slow'>", placeholderword, "</prosody>"])
         elif c = "j":
             returntemplate += "".join(["<prosody rate='x-slow'>", placeholderword, "</prosody>"])
-    return returntemplate;
+    return "<speak>" + returntemplate + "</speak>"
             
 def rap(word):
     template = createTemplate("ababcdcdefefggghhhijji").replace(placeholderword, word)
