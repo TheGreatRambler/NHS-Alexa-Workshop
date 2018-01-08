@@ -4,7 +4,7 @@ from flask_ask import Ask, statement
 app = Flask(__name__)
 ask = Ask(app, '/')
 
-noteletter = "a"
+noteletter = "m"
 
 # songspeeds greater than 100 are faster and less than 100 are slower: 20 is the minimum speed
 songspeed = 150
