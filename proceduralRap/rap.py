@@ -43,7 +43,7 @@ def createTemplate(raptemplate):
 
 @ask.launch
             
-def launched(word):
+def launched():
     welcome_message = "Give me something ta rap, dawg."
     return question(welcome_message)
     
